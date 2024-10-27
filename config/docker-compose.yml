@@ -1,0 +1,24 @@
+version: '3.9'  # Use the latest version of Docker Compose syntax
+
+services:
+  app:
+    container_name: cephalodb-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Exposes port 3000 on the host to port 3000 in the container
+    volumes:
+      - .:/usr/src/app  # Mounts the current directory to /usr/src/app inside the container
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+      - JWT_SECRET=${JWT_SECRET}  # Uses environment variables defined in .env file
+    networks:
+      - cephalodb-network
+
+  # Add other services specific to your architecture if needed
+
+networks:
+  cephalodb-network:
+    driver: bridge
