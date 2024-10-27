@@ -69,7 +69,7 @@ CephaloDB can be installed and run locally or using Docker. You can also downloa
 1. **Install CephaloDB Globally**:
 
    ```bash
-   npm install -g cephalodb
+   npm install -g cephalo-db
    ```
 
 2. **Set Up Environment Variables**:
@@ -98,7 +98,7 @@ CephaloDB can be installed and run locally or using Docker. You can also downloa
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-repo/cephalodb.git
+   git clone https://github.com/VSPaone/CephaloDB.git
    cd cephalodb
    ```
 
@@ -148,7 +148,7 @@ CephaloDB can be installed and run locally or using Docker. You can also downloa
 1. **Download CephaloDB via Git**:
 
    ```bash
-   git clone https://github.com/your-repo/cephalodb.git
+   git clone https://github.com/VSPaone/CephaloDB.git
    ```
 
 2. **Navigate to the Directory**:
